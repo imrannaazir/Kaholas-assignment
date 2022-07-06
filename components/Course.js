@@ -2,9 +2,7 @@ import Image from "next/image";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import Buttons from "./Buttons";
 import CourseInfo from "./CourseInfo";
-//#503DD4 #F9C847 #262626 #A8A8A8
 const Course = ({ course }) => {
-    console.log("course", course);
     const course_src = course.course_photo
 
     return (
@@ -22,7 +20,7 @@ const Course = ({ course }) => {
                     <Buttons />
                 </div>
                 {/* course img */}
-                <Image loader={() => course_src} src={course_src} alt={course.teacher_name} width="550" height="350" />
+                <Image src={course_src} alt={course.teacher_name} width="550px" height="350px" />
                 {/*  teacher*/}
                 <div className="lg:hidden">
                     <CourseInfo course={course} />
