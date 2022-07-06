@@ -10,15 +10,6 @@ const Home = (props) => {
 };
 
 export default Home;
-// Fetching data 
-/* export async function getStaticProps() {
-  const response = await fetch("http://localhost:3000/api/course")
-  const course = await response.json()
-
-  return {
-    props: course
-  }
-} */
 
 // Fetching data from the JSON file
 import fsPromises from 'fs/promises';

@@ -13,7 +13,7 @@ const Course = ({ course }) => {
             <div className="grid lg:grid-cols-2 mt-14 gap-10">
                 <div>
                     <p className="text-xl">{course.description}</p>
-                    {/*  teacher*/}
+                    {/*  course info*/}
                     <div className="hidden lg:block">
                         <CourseInfo course={course} />
                     </div>
@@ -21,7 +21,7 @@ const Course = ({ course }) => {
                 </div>
                 {/* course img */}
                 <Image src={course_src} alt={course.teacher_name} width="550px" height="350px" />
-                {/*  teacher*/}
+                {/*  Course info*/}
                 <div className="lg:hidden">
                     <CourseInfo course={course} />
                 </div>
